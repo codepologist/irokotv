@@ -1,0 +1,57 @@
+// Set your brand colors
+$custom-primary-color: #030014;
+$custom-light-color-100: #cecefb;
+$color-light-color-200: #a8b5db;
+
+$custom-gray-color-100: #9ca4ab;
+
+$custom-dark-color-100: #0f0d23;
+
+$custom-background-color: #003319;
+
+// Override global Sass variables from the /utilities folder
+@use "../../../node_modules/bulma/sass/" as bulma with (
+  $family-primary: '"DM Sans", sans-serif',
+  $family-secondary: '"Bebas Neue", cursive',
+  $primary: $custom-primary-color,
+  $input-shadow: $custom-primary-color,
+  $input-hover-border-l-delta: $custom-primary-color,
+  $input-active-border-l-delta: $custom-primary-color,
+  $input-focus-h: $custom-primary-color,
+  $input-focus-s: $custom-primary-color,
+
+  $input-focus-l: $custom-primary-color
+);
+
+// Import the components you need
+@forward "../../../node_modules/bulma/sass/base";
+@forward "../../../node_modules/bulma/sass/components/card";
+@forward "../../../node_modules/bulma/sass/components/modal";
+@forward "../../../node_modules/bulma/sass/components/navbar";
+@forward "../../../node_modules/bulma/sass/elements/button";
+@forward "../../../node_modules/bulma/sass/elements/icon";
+@forward "../../../node_modules/bulma/sass/elements/content";
+@forward "../../../node_modules/bulma/sass/elements/notification";
+@forward "../../../node_modules/bulma/sass/elements/progress";
+@forward "../../../node_modules/bulma/sass/elements/tag";
+@forward "../../../node_modules/bulma/sass/layout/footer";
+
+// Import the themes so that all CSS variables have a value
+@forward "../../../node_modules/bulma/sass/themes";
+
+// Custom styles
+
+main {
+  background-color: $custom-background-color;
+
+  .text-gradient {
+    background: linear-gradient(90deg, #c7ffd6 0%, #8bffaa 50%, #8bffaa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+// Google Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
