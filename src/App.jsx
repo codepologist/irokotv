@@ -11,7 +11,7 @@ const App = () => {
       <header>
         <div className="container px-6 py-4">
           <nav
-            className="navbar is-clipped is-transparent"
+            className="navbar is-clipped"
             aria-label="main navigation"
           >
             <div className="navbar-brand px-4">
