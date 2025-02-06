@@ -15,14 +15,13 @@ $custom-background-color: #003319;
   $family-secondary: '"Bebas Neue", cursive',
   $primary: $custom-primary-color,
 
-  // Form Input filed 
+  // Form Input filed
   $input-shadow: $custom-primary-color,
   $input-hover-border-l-delta: $custom-primary-color,
   $input-active-border-l-delta: $custom-primary-color,
   $input-focus-h: $custom-primary-color,
   $input-focus-s: $custom-primary-color,
-  $input-focus-l: $custom-primary-color,
- 
+  $input-focus-l: $custom-primary-color
 );
 
 // Import the components you need

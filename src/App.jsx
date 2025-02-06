@@ -47,16 +47,19 @@ const App = () => {
       <main className="section is-fullheight is-flex is-justify-content-center is-align-items-center overflow-hidden">
         <section className="hero">
           <div className="hero-body">
-            <h1 className="title has-text-white has-text-weight-bold has-text-centered">
+            <h1
+              className="title has-text-white has-text-weight-bold has-text-centered"
+              style={{ fontSize: "5.5rem", lineHeight: "100%" }}
+            >
               Find <span className="text-gradient">Nollywood Movies</span>
-              You&apos;ll Love
-              <br />
-              Without the Hassle
+              <br /> You&apos;ll Love Without the Hassle
             </h1>
-            <Search
-              searchKeyword={searchKeyword}
-              setSearchKeyword={setSearchKeyword}
-            />
+            <div className="is-flex is-justify-content-center is-align-items-center">
+              <Search
+                searchKeyword={searchKeyword}
+                setSearchKeyword={setSearchKeyword}
+              />
+            </div>
             <h1 className="subtitle has-text-white has-text-centered">
               {searchKeyword}
             </h1>
