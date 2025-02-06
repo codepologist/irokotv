@@ -2,7 +2,7 @@
 $custom-primary-color: #030014;
 $custom-light-color-100: #cecefb;
 $color-light-color-200: #a8b5db;
-
+$custom-white-color: #ffffff;
 $custom-gray-color-100: #9ca4ab;
 
 $custom-dark-color-100: #0f0d23;
@@ -21,7 +21,11 @@ $custom-background-color: #003319;
   $input-active-border-l-delta: $custom-primary-color,
   $input-focus-h: $custom-primary-color,
   $input-focus-s: $custom-primary-color,
-  $input-focus-l: $custom-primary-color
+  $input-focus-l: $custom-primary-color,
+
+  // Navbar
+
+  $navbar-background-color: $custom-white-color
 );
 
 // Import the components you need
