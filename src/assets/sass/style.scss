@@ -14,13 +14,15 @@ $custom-background-color: #003319;
   $family-primary: '"DM Sans", sans-serif',
   $family-secondary: '"Bebas Neue", cursive',
   $primary: $custom-primary-color,
+
+  // Form Input filed 
   $input-shadow: $custom-primary-color,
   $input-hover-border-l-delta: $custom-primary-color,
   $input-active-border-l-delta: $custom-primary-color,
   $input-focus-h: $custom-primary-color,
   $input-focus-s: $custom-primary-color,
-
-  $input-focus-l: $custom-primary-color
+  $input-focus-l: $custom-primary-color,
+ 
 );
 
 // Import the components you need
@@ -40,6 +42,13 @@ $custom-background-color: #003319;
 @forward "../../../node_modules/bulma/sass/themes";
 
 // Custom styles
+
+header {
+  background-color: $custom-background-color;
+  .navbar {
+    border-radius: 50px !important;
+  }
+}
 
 main {
   background-color: $custom-background-color;
