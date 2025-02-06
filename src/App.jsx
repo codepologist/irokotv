@@ -48,7 +48,7 @@ const App = () => {
         <section className="hero">
           <div className="hero-body">
             <h1
-              className="title has-text-white has-text-weight-bold has-text-centered"
+              className="title is-size-1-mobile has-text-white has-text-weight-bold has-text-centered"
               style={{ fontSize: "5.5rem", lineHeight: "100%" }}
             >
               Find <span className="text-gradient">Nollywood Movies</span>
