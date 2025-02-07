@@ -9,6 +9,10 @@ $custom-dark-color-100: #0f0d23;
 
 $custom-background-color: #003319;
 
+// Button colors
+$custom-button-primary-color: #1db954;
+$custom-button-primary-hover-color: #17a44d;
+
 // Override global Sass variables from the /utilities folder
 @use "../../../node_modules/bulma/sass/" as bulma with (
   $family-primary: '"DM Sans", sans-serif',
@@ -23,6 +27,7 @@ $custom-background-color: #003319;
   $input-focus-h: $custom-primary-color,
   $input-focus-s: $custom-primary-color,
   $input-focus-l: $custom-primary-color,
+  $input-placeholder-color: $custom-light-color-100,
 
   // Navbar
   $navbar-background-color: $custom-white-color
@@ -45,6 +50,16 @@ $custom-background-color: #003319;
 @forward "../../../node_modules/bulma/sass/themes";
 
 // Custom styles
+
+/* custom-styles.css */
+
+html,
+body {
+  background-color: $custom-background-color;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 header {
   background-color: $custom-background-color;
@@ -69,6 +84,13 @@ main {
     background-color: $custom-white-color;
     color: $custom-primary-color;
     width: 640px;
+  }
+  button {
+    color: $custom-white-color;
+    background-color: $custom-button-primary-color;
+  }
+  button:hover {
+    background-color: $custom-button-primary-hover-color; /* Slightly darker green for hover effect */
   }
 }
 

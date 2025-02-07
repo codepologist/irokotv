@@ -4,7 +4,7 @@ import searchIcon from "../assets/images/search.svg";
 const Search = ({ searchKeyword, setSearchKeyword }) => {
   return (
     <div className="search">
-      <div className="field">
+      <div className="field has-addons">
         <div className="control has-icons-left">
           <input
             className="input is-radiusless is-large"
@@ -16,6 +16,9 @@ const Search = ({ searchKeyword, setSearchKeyword }) => {
           <span className="icon is-small is-left">
             <img src={searchIcon} alt="Search Icon" />
           </span>
+        </div>
+        <div className="control">
+          <button className="button is-large">Search</button>
         </div>
       </div>
     </div>
