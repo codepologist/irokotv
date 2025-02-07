@@ -15,7 +15,10 @@ $custom-background-color: #003319;
   $family-secondary: '"Bebas Neue", cursive',
   $primary: $custom-primary-color,
 
+  // Control
   // Form Input filed
+  $input-color-l: $custom-dark-color-100,
+  $input-background-l: $custom-white-color,
   $input-shadow: $custom-primary-color,
   $input-hover-border-l-delta: $custom-primary-color,
   $input-active-border-l-delta: $custom-primary-color,
@@ -66,7 +69,6 @@ main {
 .search {
   input {
     width: 640px;
-    background-color: $custom-white-color;
   }
 }
 
