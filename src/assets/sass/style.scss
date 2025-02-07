@@ -24,7 +24,6 @@ $custom-background-color: #003319;
   $input-focus-l: $custom-primary-color,
 
   // Navbar
-
   $navbar-background-color: $custom-white-color
 );
 
@@ -61,6 +60,13 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+.search {
+  input {
+    width: 640px;
+    background-color: $custom-white-color;
   }
 }
 
