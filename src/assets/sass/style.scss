@@ -67,6 +67,7 @@ main {
 .search {
   input {
     background-color: $custom-white-color;
+    color: $custom-primary-color;
     width: 640px;
   }
 }
@@ -75,6 +76,7 @@ main {
   .search {
     input {
       background-color: $custom-white-color;
+      color: $custom-primary-color;
       width: 320px;
     }
   }
