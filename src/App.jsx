@@ -5,10 +5,7 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <main className="section is-small is-flex is-justify-content-center is-align-items-center overflow-hidden">
-        <Hero />
-
-      </main>
+      <Hero />
     </>
   );
 };

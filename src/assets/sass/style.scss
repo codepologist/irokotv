@@ -79,10 +79,16 @@ main {
   }
 }
 
+.navbar {
+  --bulma-navbar-item-hover-background-l-delta: none !important;
+  --bulma-navbar-item-active-background-l-delta: none !important;
+  --bulma-navbar-item-focus-background-l-delta: none !important;
+}
 .search {
   input {
     background-color: $custom-white-color;
     color: $custom-primary-color;
+    border-color: none !important;
     width: 640px;
   }
   button {
@@ -99,6 +105,7 @@ main {
     input {
       background-color: $custom-white-color;
       color: $custom-primary-color;
+      // border-color: red !important;
       width: 100%;
     }
   }

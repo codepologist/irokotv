@@ -8,7 +8,7 @@ const Navigation = () => {
         <div className="container px-6 py-4">
           <nav className="navbar is-clipped" aria-label="main navigation">
             <div className="navbar-brand px-4">
-              <a className="navbar-item">
+              <a className="navbar-item" style={{hover: "none"}}>
                 <img src={irokotv} width="112" height="28" alt="IrokoTV" />
               </a>
               <a

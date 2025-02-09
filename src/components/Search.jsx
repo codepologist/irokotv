@@ -8,6 +8,7 @@ const Search = ({ searchKeyword, setSearchKeyword }) => {
         <div className="control has-icons-left">
           <input
             className="input is-radiusless is-large"
+            style={{ border: "none" }}
             type="text"
             placeholder="Search for any latest nollywood movie"
             value={searchKeyword}
@@ -18,7 +19,9 @@ const Search = ({ searchKeyword, setSearchKeyword }) => {
           </span>
         </div>
         <div className="control">
-          <button className="button is-large">Search</button>
+          <button className="button is-large" style={{ borderColor: "none" }}>
+            Search
+          </button>
         </div>
       </div>
     </div>
