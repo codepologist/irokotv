@@ -30,7 +30,9 @@ $custom-button-primary-hover-color: #17a44d;
   $input-placeholder-color: $custom-light-color-100,
 
   // Navbar
-  $navbar-background-color: $custom-white-color
+  $navbar-background-color: $custom-white-color,
+
+  
 );
 
 // Import the components you need
@@ -101,6 +103,17 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+  .search {
+    input {
+      background-color: $custom-white-color;
+      color: $custom-primary-color;
+      // border-color: red !important;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
   .search {
     input {
       background-color: $custom-white-color;

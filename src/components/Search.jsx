@@ -10,7 +10,7 @@ const Search = ({ searchKeyword, setSearchKeyword }) => {
             className="input is-radiusless is-large"
             style={{ border: "none" }}
             type="text"
-            placeholder="Search for any latest nollywood movie"
+            placeholder="Search movies"
             value={searchKeyword}
             onChange={(event) => setSearchKeyword(event.target.value)}
           />
